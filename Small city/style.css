@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.mt{
+    z-index: 9;
+    background: #222222b0;
+    opacity: 80%;
+    height: 40vh;
+    width: 1000px;
+    max-width: 1000px;
+    top: 30%;
+    left: 24%;
+    position: absolute;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow:0 0 90px rgb(255, 0, 157);
+    
+}
+
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    color: #fff;
+    top: 200px;
+    left: 840px;
+    font-size: 60px;
+}
+
+.regulamin{        
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+margin: 10px;
+padding: 15px 45px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+display: block;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+}
+
+.regulamin:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+}
+     
+.podania{
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.podania:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.rain{
+    height: 100vh;
+    background-image: url(rain.png);
+    animation: rain 0.3s linear infinite;
+}
+@keyframes rain{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 20% 100%;
+    }
+}
+.rain::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-image: url(lightining.png);
+    top: -100px;
+    transform: rotate(180deg);
+    animation: lightining 4s linear infinite;
+    opacity: 0.4;
+}
+@keyframes lightining{
+    0%{
+        opacity: 0.4;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 0.4;
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.4;
+    }
+    31%{
+        opacity: 0.4;
+    }
+    35%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
